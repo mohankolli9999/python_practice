@@ -141,5 +141,19 @@
 # print(*values)
 
 sentence = "This is a common interview question"
-alphabet = list(sentence)
-print(alphabet)
+
+char_frequency = {}
+
+for char in sentence:
+    if char in char_frequency:
+        char_frequency[char] += 1
+    else:
+        char_frequency[char] = 1
+
+"""
+we got the frequency of each alphabet from here
+"""
+char_frequency_sorted = sorted(
+    char_frequency.items(), key=lambda kv: kv[1], reverse=True)
+
+print(char_frequency_sorted)
