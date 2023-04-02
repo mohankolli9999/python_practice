@@ -139,21 +139,47 @@
 
 # values = range(5)
 # print(*values)
+###########################################################################################################################################
+# sentence = "This is a common interview question"
 
-sentence = "This is a common interview question"
+# char_frequency = {}
 
-char_frequency = {}
-
-for char in sentence:
-    if char in char_frequency:
-        char_frequency[char] += 1
-    else:
-        char_frequency[char] = 1
+# for char in sentence:
+# if char in char_frequency:
+3  # char_frequency[char] += 1
+# else:
+# char_frequency[char] = 1
 
 """
 we got the frequency of each alphabet from here
 """
-char_frequency_sorted = sorted(
-    char_frequency.items(), key=lambda kv: kv[1], reverse=True)
+# char_frequency_sorted = sorted(
+# char_frequency.items(), key=lambda kv: kv[1], reverse=True)
 
-print(char_frequency_sorted)
+# print(char_frequency_sorted)
+
+
+# class Point:
+#     def draw(self):
+#         print("draw")
+
+
+# # Point = Point()
+# # print(Point)
+# # print(type(Point))
+# print(Point.draw)
+
+class Car:
+    def __init__(self, model, year):
+        self.model = model
+        self.year = year
+
+    def printModel(self):
+        print(self.model)
+
+
+my_car = Car("Toyota", 2021)
+my_car_1 = Car(2, 2022)
+my_car.printModel()  # prints "Toyota"
+my_car_1.model = "Lalith"
+print(my_car_1.model)
